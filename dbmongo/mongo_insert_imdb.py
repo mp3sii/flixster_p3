@@ -1,7 +1,7 @@
 import json
 import requests
-from mongo_connection import collection, collection_imdb, collection_error
-from get_omdb_key import get_omdb_key
+from dbmongo.mongo_connection import collection, collection_imdb, collection_error
+from dbmongo.get_omdb_key import get_omdb_key
 
 api_key = get_omdb_key
 

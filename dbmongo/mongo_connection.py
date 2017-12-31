@@ -1,5 +1,6 @@
 # /usr/bin/env python
 import json
+
 from pymongo import MongoClient
 
 # Establishes a Mongo Connection, by using the default parameters or provided parameters in a setup.json file
@@ -56,5 +57,3 @@ except FileNotFoundError:
 except json.JSONDecodeError:
 
     raise json.JSONDecodeError('The JSON you provided in setup.json is not valid')
-
-

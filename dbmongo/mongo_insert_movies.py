@@ -1,6 +1,6 @@
 import json
 
-from mongo_connection import collection
+from dbmongo.mongo_connection import collection
 
 # Read Json
 with open('ratings.json', 'r') as f:

@@ -12,7 +12,7 @@ Then the program allows (optional):
 # Installation
 **Requires Python 3**
 0. Clone this repo
-1. Make virtualenv with Python 3 (I reccommend using [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io))  
+1. Make virtualenv with Python 3 (I recommend using [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io))  
 
 ```bash
 mkvirtualenv your_repo -p /usr/local/bin/python3

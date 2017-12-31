@@ -3,8 +3,8 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
-from mongo_connection import collection_error, collection, collection_imdb
-from get_omdb_key import get_omdb_key
+from dbmongo.mongo_connection import collection_error, collection, collection_imdb
+from dbmongo.get_omdb_key import get_omdb_key
 
 api_key = get_omdb_key
 
