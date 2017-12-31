@@ -1,4 +1,4 @@
-#!~/.virtualenvs/flixsterP3/bin/python3.5
+# /usr/bin/env python
 
 import csv
 import json

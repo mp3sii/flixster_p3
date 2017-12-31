@@ -1,0 +1,6 @@
+*.txt
+!requirements.txt
+*.csv
+*.json
+
+.idea/

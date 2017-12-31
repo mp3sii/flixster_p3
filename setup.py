@@ -1,7 +1,8 @@
-#!~/.virtualenvs/flixsterP3/bin/python3.5
+# /usr/bin/env python
 
 try:
     from setuptools import setup
+    from setuptools import find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -11,7 +12,8 @@ setup(
     description='Flixster ratings Python API',
     keywords='flixster ratings movies',
     author='Angel Saiz',
-    packages=['ratings'],
-    install_requires=['requests']
+    packages=[find_packages()],
+    # python_requires='>3.2',
+    install_requires=["requests"]
 
 )
