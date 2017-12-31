@@ -5,12 +5,12 @@ from dbmongo.get_omdb_key import get_omdb_key
 
 api_key = get_omdb_key
 
-rating_count = collection.find({'imdb_id': None}).count()
+rating_count = collection.find({'imdb': None}).count()
 print(rating_count)
 counter = 0
 
-for rating in collection.find({'imdb_id': None}):
-    # Movies with already an imdbId will be skipped
+for rating in collection.find({'imdb': None}):
+    # Movies with already an imdb will be skipped
     counter += 1
     print('{counter} of {total}, movie: {movie}'
           .format_map({'counter': counter,
@@ -50,4 +50,3 @@ for rating in collection.find({'imdb_id': None}):
         except json.decoder.JSONDecodeError:
             pass
 
-# TODO create two fields update and create date
