@@ -17,3 +17,5 @@ setup(
     install_requires=["requests"]
 
 )
+# TODO delete or fix setup.py
+# TODO complete readme.md

@@ -33,7 +33,7 @@ class Rating(object):
                         f.write(chunk)
                         f.flush()
             except TypeError:
-                print('Unfortunately no progress bar can be printed, please be patient')
+
                 f.write(r.text)
 
     @staticmethod

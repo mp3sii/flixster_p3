@@ -1,7 +1,6 @@
 # Flixster Ratings
-This program exports the user data from [flixster](https://www.flixster.com) and loads it into a [json](https://www.json.org).
-Then the program allows (optional) for:
-* Parse the data into a CSV
+This program exports the user data from [flixster](https://www.flixster.com) and loads it into a [json](https://www.json.org) and a CSV.
+Then the program allows (optional):
 * Store the data into Mongo:
 	* Load the data into a local MONGO DB. 
 	* Match the results to IMDB, by Title and Year using [OMDB API](http://www.omdbapi.com/). You will have to provide your own API_Key, request it [here](http://www.omdbapi.com/apikey.aspx) 
@@ -39,4 +38,5 @@ pip install requirements.txt
 ```
 
 # Usage
-## To download the user flixster ratings
+## Step 1: Download the user flixster ratings onto a JSON
+In terminal, execute `python initiate.py <your user>`. This will create/replace a `ratings.json` file on your directory, and a `ratings.csv` with a subset of the attributes

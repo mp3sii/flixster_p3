@@ -28,4 +28,8 @@ print('RatingsFlag          {r_flag}        => OK'.format_map({'r_flag': ratings
 
 r = Rating(user_id=flixster_user, score_types=score_types)
 print('Downloading Flixster Ratings for {} into ratings.JSON'.format(flixster_user))
+print('Unfortunately no progress bar can be printed, please be patient')
 r.read()
+print('Parsing JSON to csv')
+r.csv_parse()
+
